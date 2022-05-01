@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+window.onload = function(){
+	document.querySelector("#btnOk").onclick = function(){
+		frm.submit();
+	}
+}
+</script>
+
+</head>
+<body>
+<table>
+	<tr>
+		<td><img src="../static/images/pic2.jpeg" style="width: 30%"/></td>
+		<td>
+		<pre>
+원피스2
+(주)지에스리테일 대표이사 허연수, 김호성 / 주소: 서울특별시 강남구 논현로 508 (역삼동, GS타워)
+사업자등록번호 : 116-81-18745 / 통신판매업신고 : 제2014-서울강남-01544호 사업자정보확인
+개인정보 보호책임자 : 이종혁 / 호스팅제공자 : ㈜지에스리테일
+고객센터(유료) : 1899-4455 / 02-2007-4545 / 팩스 : 02-393-6093 / 이메일문의 : gsshop@gsretail.com
+Copyright © GS Retail Co.,Ltd. All Rights Reserved
+		</pre>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<form action="cart" name="frm" method="post">{% csrf_token %}
+				<input type="hidden" name="name" value="원피스">
+				<input type="hidden" name="price" value="20000">
+				<input type="button" id="btnOk" value="장바구니에 물건담기">
+				<input type="button" value="홈으로" onclick="history.back()">
+			</form>
+		</td>
+	</tr>
+	
+</table>
+</body>
+</html>

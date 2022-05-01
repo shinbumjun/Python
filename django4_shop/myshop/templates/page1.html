@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+window.onload = function(){
+	document.querySelector("#btnOk").onclick = function(){
+		frm.submit();
+	}
+}
+</script>
+
+</head>
+<body>
+<table>
+	<tr>
+		<td><img src="../static/images/pic1.jpeg" style="width: 30%"/></td>
+		<td>
+		<pre>
+원피스
+배송기간 서울/경기 지역 3~6일, 그 외 지역은 3~9일 (공휴일 기타 휴무일 제외), 공휴일 및 기타 휴일은 배송이 불가합니다.
+일부 주문 상품의 경우 기본 배송일 외에 제작기간이 추가될 수 있습니다.(단, GOURMET494 산지식품의 경우 재고수량에 따라 근거리 배송만 가능)
+동시 구매라도 공급업체가 다를 경우 별도 배송이 됩니다.
+배송은 국내배송만 가능합니다.
+단, GOURMET494 산지식품은 근거리배송만 가능합니다. 근거리 배송 구매조건 및 지역안내
+도서산간 지역은 별도의 배송비 및 반품비용이 추가될 수 있습니다.
+(별도 배송비용 범위는 3천원~1만원, 상품상세정보 내 업체별 배송안내 내용 참고)
+		</pre>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<form action="cart" name="frm" method="post">{% csrf_token %}
+				<input type="hidden" name="name" value="짱 예쁜 원피스">
+				<input type="hidden" name="price" value="40000">
+				<input type="button" id="btnOk" value="장바구니에 물건담기">
+				<input type="button" value="홈으로" onclick="history.back()">
+			</form>
+		</td>
+	</tr>
+	
+</table>
+</body>
+</html>
