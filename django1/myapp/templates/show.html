@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html</title>
+<link rel="stylesheet" type="text/css" href="/static/css/test.css">
+<script type="text/javascript" src="/static/js/test.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- 창 -->
+<script type="text/javascript">
+$(document).ready(function(){
+	// alert("jquery ok");
+	
+	//클릭하면 된다.
+	$("#myimg").click(function(){
+		abc(); //다음 이미지를 누르면 이동
+		// alert("jquery nice"); //창이뜸
+	}); 
+});
+</script>
+</head>
+<body>
+<!-- css는 body 밖에 만드는걸 선호 -->
+<h1>good 요청에 <span style="font-family:궁서; font-size:50pt; color:blue">출력 결과</span></h1>
+출력을 위한 파일은 각 app의 templates 폴더에 넣는다.
+<br>
+<!-- jsp라면<%= %> 이걸로 받는다-->
+Django가 지원하는 변수 매핑 태그 : {{mymsg}}
+<hr>
+
+<img src="/static/images/kbs.png" id="myimg" />
+<!-- 요청명 (redirect 방식) -->
+<a href="http://www.daum.net:80/index.html">다음 사이트의 html 문서</a>
+</body>
+</html>
