@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+직원 자료<br>
+{% if datas %}
+   <!-- 안전하게 해석 -->
+   {{datas|safe}}
+{% endif %}
+<hr>
+부서별 연봉합(dict): <br>
+총무부(10): {{buser_group.sum.10}}<br>
+영업부(20): {{buser_group.sum.20}}<br>
+전산부(30): {{buser_group.sum.30}}<br>
+관리부(40): {{buser_group.sum.40}}<br>
+<br>
+부서별 연봉평균(dict): <br>
+총무부(10): {{buser_group.avg.10}}<br>
+영업부(20): {{buser_group.avg.20}}<br>
+전산부(30): {{buser_group.avg.30}}<br>
+관리부(40): {{buser_group.avg.40}}<br>
+<hr>
+부서별 연봉합/평균(df): <br>
+{{buser_group2|safe}}
+
+<br>
+<img src="/static/images/buser.png" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
