@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+회원자료 입력 <p/>
+
+<!-- get방식 -->
+<!-- <form action="/member/insertok" method="get"> -->
+
+<!-- post방식, [수정]insertok -> insert, 삭제해킹방지 -->
+<form action="/member/insert" method="post">{% csrf_token %}
+
+이름 : <input type="text" name="name">
+<input type="submit" value="확인">
+</form>
+</body>
+</html>
