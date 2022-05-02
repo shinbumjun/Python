@@ -37,7 +37,7 @@ def setScatterGraph(tour_table, all_table, tourPoint):
     r1 = lamb1(merge_table)
     print('r1:', r1)
     plt.title('r={:.3f}'.format(r1)) # 소수3자리까지
-    plt.scatter(merge_table['ForNum'], merge_table['ForNum'], s=6, c='red', alpha=0.8)
+    plt.scatter(merge_table['china'], merge_table['ForNum'], s=6, c='red', alpha=0.8)
     
     print('ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ')
     print('일본인')
