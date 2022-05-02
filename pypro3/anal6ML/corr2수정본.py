@@ -108,3 +108,13 @@ def chulbal():
     
 if __name__ == '__main__':
     chulbal()
+    
+'''
+상관관계 문제)
+https://github.com/pykwon/python 에 있는 
+Advertising.csv 파일을 읽어 tv,radio,newspaper 간의 상관관계를 파악하시오. 
+그리고 이들의 관계를 heatmap 그래프로 표현하시오. 
+
+[참고]
+https://cafe.daum.net/flowlife/SBU0/44
+'''
