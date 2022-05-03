@@ -1,6 +1,12 @@
 '''
-# iris dataset으로 선형회귀분석
-# 상관관계가 약한 경우와 강한 경우로 분석 모델을 작성해 비교
+# iris dataset으로 선형회귀분석 (상관관계가 약한 경우와 강한 경우로 분석 모델을 작성해 비교)
+
+상관관계가 약한 두 변수(단순 선형회귀)
+상관관계가 강한 두 변수
+
+새로운 값(petal_length)으로 미지의 sepal_length 값 얻기
+
+다중 선형회귀 : 독립변수 복수
 '''
 import pandas as pd
 import seaborn as sns
